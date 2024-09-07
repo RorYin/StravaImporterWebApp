@@ -265,7 +265,7 @@ def activities():
         json_data =  activities
         name = session['name']
         filename = app.config['UPLOAD_FOLDER']+"/"+f"{session['name']}.json"
-        output_file = app.config['UPLOAD_FOLDER']+"/"+f"{session['name']}.xlsx"
+        output_file = app.config['UPLOAD_FOLDER']+"/"+"combined_athlete_activities.xlsx"
         processdata(json_data,name,output_file)
         # Save activities to a JSON file
         with open(filename, 'w') as json_file:
@@ -295,7 +295,7 @@ def activitiesbyid(athlete_id):
         json_data =  activities
         name = session['name']
         filename = f"{app.config['UPLOAD_FOLDER']/name}.json"
-        output_file = app.config['UPLOAD_FOLDER']+"/"+f"{name}.xlsx"
+        output_file = app.config['UPLOAD_FOLDER']+"/"+"combined_athlete_activities.xlsx"
         processdata(json_data,name,output_file)
         # Save activities to a JSON file
         with open(filename, 'w') as json_file:
