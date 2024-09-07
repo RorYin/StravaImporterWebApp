@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authorized Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #4682b4;
+        }
+        .search-bar {
+            width: 97%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .user-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .user-list li {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .user-info {
+            flex-grow: 1;
+        }
+        .user-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Authorized Users</h1>
+        <input type="text" class="search-bar" id="searchBar" placeholder="Search users by name..." onkeyup="filterUsers()">
+        <ul class="user-list" id="userList">
+            {% for user in users %}
+            <li>
+                <div class="user-info">
+                    <p><strong>Name:</strong> {{ user.name }}</p>
+                    <p><strong>Gender:</strong> {{ user.gender }}</p>
+                    <p><strong>Athlete ID:</strong> {{ user.athlete_id }}</p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <script>
+        function filterUsers() {
+            var input, filter, ul, li, div, p, i, txtValue;
+            input = document.getElementById('searchBar');
+            filter = input.value.toLowerCase();
+            ul = document.getElementById('userList');
+            li = ul.getElementsByTagName('li');
+
+            for (i = 0; i < li.length; i++) {
+                div = li[i].getElementsByClassName('user-info')[0];
+                p = div.getElementsByTagName('p')[0];
+                txtValue = p.textContent || p.innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
