@@ -2,7 +2,7 @@
 
  ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-![](https://img.shields.io/github/stars/RorYin/StravaImporterWebApp.svg) ![](https://img.shields.io/github/forks/RorYin/StravaImporterWebApp.svg) ![](https://img.shields.io/github/tags/RorYin/StravaImporterWebApp.svg) ![](https://img.shields.io/github/release/RorYin/StravaImporterWebApp.svg) ![](https://img.shields.io/github/issues/RorYin/StravaImporterWebApp) 
+![](https://img.shields.io/github/stars/RorYin/StravaScraperWebApp.svg) ![](https://img.shields.io/github/forks/RorYin/StravaScraperWebApp.svg) ![](https://img.shields.io/github/tags/RorYin/StravaScraperWebApp.svg) ![](https://img.shields.io/github/release/RorYin/StravaScraperWebApp.svg) ![](https://img.shields.io/github/issues/RorYin/StravaScraperWebApp) 
 
 
 
