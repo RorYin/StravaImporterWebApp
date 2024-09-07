@@ -1,5 +1,4 @@
 
-![](https://telegra.ph/file/b1f62ac15f2b9eca174ba.png)
 
  ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)!
 
