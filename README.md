@@ -15,7 +15,7 @@
 + If interested you can try deploying your own using the open source code.
 + Currently deployed on pythonanywhere.
 + It fetches data and stores in json and excel sheet both formats, combines all data of every users too in same common excel sheet.
-+ Note: Strava API v3 supports only 1 user to connect, once u submit ur app for review with description and fill the form which is available on thier developers community pages.
++ Note: Strava API v3 supports only 1 user to connect, once u submit ur app for review with description and fill the form which is available on thier developers community pages you will be able to connect upto 999 users, and increase rate limits.
 
 # ReleaseNote
 
